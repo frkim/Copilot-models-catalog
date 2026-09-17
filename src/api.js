@@ -53,10 +53,10 @@ function copilotHeaders(copilotToken) {
 async function readErrorMessage(response) {
   try {
     const body = await response.json();
-    const message = typeof body?.message === 'string' ? body.message : '';
+    const message = typeof body?.message === 'string' ? body.message : response.statusText;
     return message ? ` ${message.slice(0, 200)}` : '';
   } catch {
-    return '';
+    return response.statusText ? ` ${response.statusText}` : '';
   }
 }
 

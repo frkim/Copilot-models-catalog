@@ -52,6 +52,7 @@ test('--status filters the listed models', async () => {
   assert.equal(await run(['--status', 'enabled'], deps), 0);
 
   const catalog = JSON.parse(deps.stdout.text);
+  assert.equal(catalog.filter, 'enabled');
   assert.deepEqual(
     catalog.models.map((model) => model.id),
     ['gpt-4o']
@@ -109,6 +110,20 @@ test('fails when no token is available', async () => {
 
   assert.equal(await run([], deps), 2);
   assert.match(deps.stderr.text, /No GitHub token found/);
+});
+
+test('blank tokens are ignored', async () => {
+  const tokens = [];
+  const deps = dependencies({
+    env: { GITHUB_TOKEN: '  ', GH_TOKEN: ' ghp_example ' },
+    listModelsImpl: async (token) => {
+      tokens.push(token);
+      return RAW_MODELS;
+    }
+  });
+
+  assert.equal(await run(['--token', ' '], deps), 0);
+  assert.deepEqual(tokens, ['ghp_example']);
 });
 
 test('rejects an unknown status', async () => {

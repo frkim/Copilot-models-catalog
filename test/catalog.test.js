@@ -73,6 +73,15 @@ test('buildCatalog summarizes and sorts the models', () => {
   );
 });
 
+test('buildCatalog sorts models the same way on every machine', () => {
+  const ids = ['b', 'A', 'a', 'B'].map((id) => ({ id }));
+
+  assert.deepEqual(
+    buildCatalog(ids).models.map((model) => model.id),
+    ['A', 'B', 'a', 'b']
+  );
+});
+
 test('buildCatalog rejects non array payloads', () => {
   assert.throws(() => buildCatalog({ data: [] }), TypeError);
 });
@@ -88,6 +97,9 @@ test('filterCatalogByStatus keeps only the requested status', () => {
     filterCatalogByStatus(catalog, 'enabled').models.map((model) => model.id),
     ['gpt-4o']
   );
+  assert.equal(filterCatalogByStatus(catalog, 'disabled').filter, 'disabled');
   assert.equal(filterCatalogByStatus(catalog, 'all').models.length, 2);
+  assert.equal(filterCatalogByStatus(catalog, 'all').filter, 'all');
+  assert.equal(catalog.filter, undefined);
   assert.throws(() => filterCatalogByStatus(catalog, 'nope'), TypeError);
 });

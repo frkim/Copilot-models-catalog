@@ -39,7 +39,9 @@ const OPTIONS = {
 const VALID_STATUSES = ['all', 'enabled', 'disabled'];
 
 function resolveToken(values, env) {
-  return values.token || env.COPILOT_TOKEN || env.GITHUB_TOKEN || env.GH_TOKEN || null;
+  const candidates = [values.token, env.COPILOT_TOKEN, env.GITHUB_TOKEN, env.GH_TOKEN];
+
+  return candidates.map((candidate) => candidate?.trim()).find(Boolean) ?? null;
 }
 
 /**

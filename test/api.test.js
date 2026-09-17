@@ -3,10 +3,11 @@ import { test } from 'node:test';
 
 import { ApiError, fetchCopilotToken, fetchModels, isCopilotToken, listModels } from '../src/api.js';
 
-function jsonResponse(body, { ok = true, status = 200 } = {}) {
+function jsonResponse(body, { ok = true, status = 200, statusText = '' } = {}) {
   return {
     ok,
     status,
+    statusText,
     json: async () => body,
     text: async () => JSON.stringify(body)
   };
@@ -57,6 +58,22 @@ test('fetchModels reads the data array and authenticates with the Copilot token'
   assert.deepEqual(models, [{ id: 'gpt-4o' }]);
   assert.equal(calls[0].url, 'https://copilot.test/models');
   assert.equal(calls[0].init.headers.authorization, ['Bearer', 'tid=abc'].join(' '));
+});
+
+test('fetchModels falls back to the status text when the body has no message', async () => {
+  const fetchImpl = async () => ({
+    ok: false,
+    status: 500,
+    statusText: 'Internal Server Error',
+    json: async () => {
+      throw new SyntaxError('not JSON');
+    }
+  });
+
+  await assert.rejects(() => fetchModels('tid=abc', { fetchImpl }), (error) => {
+    assert.match(error.message, /HTTP 500\)\. Internal Server Error/);
+    return true;
+  });
 });
 
 test('fetchModels accepts a bare array payload', async () => {

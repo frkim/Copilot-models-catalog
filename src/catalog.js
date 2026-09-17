@@ -59,7 +59,7 @@ export function buildCatalog(rawModels, options = {}) {
 
   const models = rawModels
     .map((rawModel) => normalizeModel(rawModel))
-    .sort((left, right) => String(left.id).localeCompare(String(right.id)));
+    .sort((left, right) => (String(left.id) < String(right.id) ? -1 : 1));
 
   const enabled = models.filter((model) => model.enabled).length;
 
@@ -76,9 +76,9 @@ export function buildCatalog(rawModels, options = {}) {
 }
 
 /**
- * Filters the model list of a catalog document by status. The summary keeps
- * describing the whole catalog, so callers can tell how many models were left
- * out by the filter.
+ * Filters the model list of a catalog document by status. The applied filter is
+ * reported in the `filter` field and the summary keeps describing the whole
+ * catalog, so callers can tell how many models were left out by the filter.
  *
  * @param {object} catalog catalog document built by {@link buildCatalog}
  * @param {'all'|'enabled'|'disabled'} status status to keep
@@ -86,7 +86,7 @@ export function buildCatalog(rawModels, options = {}) {
  */
 export function filterCatalogByStatus(catalog, status) {
   if (status === 'all') {
-    return { ...catalog };
+    return { ...catalog, filter: 'all' };
   }
 
   if (status !== 'enabled' && status !== 'disabled') {
@@ -95,5 +95,5 @@ export function filterCatalogByStatus(catalog, status) {
 
   const models = catalog.models.filter((model) => model.status === status);
 
-  return { ...catalog, models };
+  return { ...catalog, filter: status, models };
 }

@@ -73,8 +73,9 @@ arguments or a missing token.
 ```
 
 The `models` array above is truncated to a single entry for readability, which
-is why it does not match the `total` of the summary. The `summary` always
-describes the full catalog, even when `--status` filters the `models` array.
+is why it does not match the `total` of the summary. The document also carries a
+`filter` field with the value of `--status`: the `summary` always describes the
+full catalog, even when the filter removed models from the `models` array.
 
 ## Tests
 

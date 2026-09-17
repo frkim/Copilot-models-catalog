@@ -58,8 +58,8 @@ export function buildCatalog(rawModels, options = {}) {
   }
 
   const models = rawModels.map((rawModel) => normalizeModel(rawModel)).sort((left, right) => {
-    const leftId = String(left.id);
-    const rightId = String(right.id);
+    const leftId = left.id ?? '';
+    const rightId = right.id ?? '';
 
     if (leftId === rightId) {
       return 0;

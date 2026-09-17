@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { realpathSync } from 'node:fs';
 import { writeFile } from 'node:fs/promises';
 import process from 'node:process';
 import { pathToFileURL } from 'node:url';
@@ -126,7 +127,10 @@ export async function run(argv, dependencies = {}) {
   return 0;
 }
 
-const isMain = Boolean(process.argv[1]) && import.meta.url === pathToFileURL(process.argv[1]).href;
+/** `process.argv[1]` may be a symlink, for instance in `node_modules/.bin`. */
+const isMain =
+  Boolean(process.argv[1]) &&
+  import.meta.url === pathToFileURL(realpathSync(process.argv[1])).href;
 
 if (isMain) {
   process.exitCode = await run(process.argv.slice(2));

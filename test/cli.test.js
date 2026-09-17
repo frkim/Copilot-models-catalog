@@ -79,6 +79,17 @@ test('--output writes the catalog to a file', async () => {
   assert.match(deps.stderr.text, /Wrote 2 model\(s\) to models\.json/);
 });
 
+test('reports a failure to write the output file', async () => {
+  const deps = dependencies({
+    writeFileImpl: async () => {
+      throw new Error('EACCES: permission denied');
+    }
+  });
+
+  assert.equal(await run(['--output', '/nope/models.json'], deps), 1);
+  assert.match(deps.stderr.text, /Unable to write \/nope\/models\.json: EACCES/);
+});
+
 test('--token wins over the environment', async () => {
   const tokens = [];
   const deps = dependencies({

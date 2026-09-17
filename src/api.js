@@ -6,10 +6,12 @@
  * exchanged for a short-lived Copilot token, which is then used to call
  * `GET https://api.githubcopilot.com/models`.
  */
+import { VERSION } from './version.js';
 
 export const GITHUB_API_BASE_URL = 'https://api.github.com';
 export const COPILOT_API_BASE_URL = 'https://api.githubcopilot.com';
 export const USER_AGENT = 'copilot-models-catalog';
+export const EDITOR_VERSION = `${USER_AGENT}/${VERSION}`;
 
 /** Error carrying the HTTP status of a failed API call. */
 export class ApiError extends Error {
@@ -36,15 +38,23 @@ function copilotHeaders(copilotToken) {
     authorization: ['Bearer', copilotToken].join(' '),
     accept: 'application/json',
     'user-agent': USER_AGENT,
-    'editor-version': `${USER_AGENT}/1.0.0`,
+    'editor-version': EDITOR_VERSION,
     'copilot-integration-id': 'vscode-chat'
   };
 }
 
-async function readErrorBody(response) {
+/**
+ * Extracts the `message` field of an error payload. The rest of the body is
+ * dropped on purpose: it may echo back request details such as headers.
+ *
+ * @param {Response} response
+ * @returns {Promise<string>} a message to append to an error, possibly empty
+ */
+async function readErrorMessage(response) {
   try {
-    const body = await response.text();
-    return body ? ` ${body.slice(0, 500)}` : '';
+    const body = await response.json();
+    const message = typeof body?.message === 'string' ? body.message : '';
+    return message ? ` ${message.slice(0, 200)}` : '';
   } catch {
     return '';
   }
@@ -65,13 +75,13 @@ export async function fetchCopilotToken(githubToken, options = {}) {
       authorization: `token ${githubToken}`,
       accept: 'application/json',
       'user-agent': USER_AGENT,
-      'editor-version': `${USER_AGENT}/1.0.0`
+      'editor-version': EDITOR_VERSION
     }
   });
 
   if (!response.ok) {
     throw new ApiError(
-      `Unable to obtain a Copilot token (HTTP ${response.status}).${await readErrorBody(response)}`,
+      `Unable to obtain a Copilot token (HTTP ${response.status}).${await readErrorMessage(response)}`,
       response.status
     );
   }
@@ -99,7 +109,7 @@ export async function fetchModels(copilotToken, options = {}) {
 
   if (!response.ok) {
     throw new ApiError(
-      `Unable to list Copilot models (HTTP ${response.status}).${await readErrorBody(response)}`,
+      `Unable to list Copilot models (HTTP ${response.status}).${await readErrorMessage(response)}`,
       response.status
     );
   }

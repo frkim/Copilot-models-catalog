@@ -32,12 +32,15 @@ test('fetchCopilotToken exchanges a GitHub token', async () => {
   assert.equal(calls[0].init.headers.authorization, 'token ghp_example');
 });
 
-test('fetchCopilotToken surfaces HTTP errors', async () => {
-  const fetchImpl = async () => jsonResponse({ message: 'Bad credentials' }, { ok: false, status: 401 });
+test('fetchCopilotToken surfaces HTTP errors without echoing the whole body', async () => {
+  const fetchImpl = async () =>
+    jsonResponse({ message: 'Bad credentials', request: { authorization: 'token secret' } }, { ok: false, status: 401 });
 
   await assert.rejects(() => fetchCopilotToken('bad', { fetchImpl }), (error) => {
     assert.ok(error instanceof ApiError);
     assert.equal(error.status, 401);
+    assert.match(error.message, /Bad credentials/);
+    assert.doesNotMatch(error.message, /secret/);
     return true;
   });
 });

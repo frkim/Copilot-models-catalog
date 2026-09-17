@@ -86,7 +86,7 @@ export function buildCatalog(rawModels, options = {}) {
  */
 export function filterCatalogByStatus(catalog, status) {
   if (status === 'all') {
-    return catalog;
+    return { ...catalog };
   }
 
   if (status !== 'enabled' && status !== 'disabled') {

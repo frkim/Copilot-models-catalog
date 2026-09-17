@@ -6,8 +6,7 @@ import { parseArgs } from 'node:util';
 
 import { ApiError, COPILOT_API_BASE_URL, listModels } from './api.js';
 import { buildCatalog, filterCatalogByStatus } from './catalog.js';
-
-const VERSION = '1.0.0';
+import { VERSION } from './version.js';
 
 const USAGE = `copilot-models-catalog ${VERSION}
 
@@ -107,7 +106,13 @@ export async function run(argv, dependencies = {}) {
   const json = values.compact ? JSON.stringify(catalog) : JSON.stringify(catalog, null, 2);
 
   if (values.output) {
-    await writeFileImpl(values.output, `${json}\n`, 'utf8');
+    try {
+      await writeFileImpl(values.output, `${json}\n`, 'utf8');
+    } catch (error) {
+      stderr.write(`Unable to write ${values.output}: ${error.message}\n`);
+      return 1;
+    }
+
     stderr.write(
       `Wrote ${catalog.models.length} model(s) to ${values.output} ` +
         `(${catalog.summary.enabled} enabled, ${catalog.summary.disabled} disabled).\n`

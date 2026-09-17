@@ -1,0 +1,23 @@
+{
+  "name": "copilot-models-catalog",
+  "version": "1.0.0",
+  "description": "Command-line tool that lists all GitHub Copilot models and whether they are enabled or disabled, as JSON.",
+  "type": "module",
+  "bin": {
+    "copilot-models-catalog": "src/cli.js"
+  },
+  "main": "src/index.js",
+  "exports": "./src/index.js",
+  "engines": {
+    "node": ">=18.17.0"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "start": "node src/cli.js",
+    "test": "node --test"
+  },
+  "license": "MIT",
+  "private": true
+}

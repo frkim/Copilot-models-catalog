@@ -57,9 +57,16 @@ export function buildCatalog(rawModels, options = {}) {
     throw new TypeError('Expected an array of models');
   }
 
-  const models = rawModels
-    .map((rawModel) => normalizeModel(rawModel))
-    .sort((left, right) => (String(left.id) < String(right.id) ? -1 : 1));
+  const models = rawModels.map((rawModel) => normalizeModel(rawModel)).sort((left, right) => {
+    const leftId = String(left.id);
+    const rightId = String(right.id);
+
+    if (leftId === rightId) {
+      return 0;
+    }
+
+    return leftId < rightId ? -1 : 1;
+  });
 
   const enabled = models.filter((model) => model.enabled).length;
 

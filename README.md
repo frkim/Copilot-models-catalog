@@ -54,6 +54,7 @@ arguments or a missing token.
   "generatedAt": "2026-01-01T00:00:00.000Z",
   "source": "https://api.githubcopilot.com/models",
   "summary": { "total": 2, "enabled": 1, "disabled": 1 },
+  "filter": "all",
   "models": [
     {
       "id": "claude-sonnet-4",

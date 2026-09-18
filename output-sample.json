@@ -1,0 +1,1759 @@
+{
+  "generatedAt": "2026-09-18T07:48:39.104Z",
+  "source": "https://api.githubcopilot.com/models",
+  "summary": {
+    "total": 40,
+    "enabled": 40,
+    "disabled": 0
+  },
+  "models": [
+    {
+      "id": "claude-haiku-4.5",
+      "name": "Claude Haiku 4.5",
+      "vendor": "Anthropic",
+      "family": "claude-haiku-4.5",
+      "version": "claude-haiku-4.5",
+      "status": "enabled",
+      "enabled": true,
+      "policy": {
+        "state": "enabled",
+        "required": true,
+        "termsUrl": "Enable access to the latest Claude Haiku 4.5 model from Anthropic. [Learn more about how GitHub Copilot serves Claude Haiku 4.5](https://gh.io/copilot-anthropic)."
+      },
+      "preview": false,
+      "modelPicker": {
+        "enabled": true,
+        "category": "lightweight"
+      },
+      "capabilities": {
+        "type": "chat",
+        "supports": {
+          "max_thinking_budget": 32000,
+          "min_thinking_budget": 1024,
+          "parallel_tool_calls": true,
+          "streaming": true,
+          "tool_calls": true,
+          "vision": true
+        },
+        "limits": {
+          "max_context_window_tokens": 200000,
+          "max_non_streaming_output_tokens": 16000,
+          "max_output_tokens": 64000,
+          "max_prompt_tokens": 136000,
+          "vision": {
+            "max_prompt_image_size": 3145728,
+            "max_prompt_images": 5,
+            "supported_media_types": [
+              "image/jpeg",
+              "image/png",
+              "image/webp",
+              "application/pdf"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "claude-opus-4.7",
+      "name": "Claude Opus 4.7",
+      "vendor": "Anthropic",
+      "family": "claude-opus-4.7",
+      "version": "claude-opus-4.7",
+      "status": "enabled",
+      "enabled": true,
+      "policy": {
+        "state": "enabled",
+        "required": true,
+        "termsUrl": "Enable access to the latest Claude Opus 4.7 model from Anthropic. [Learn more about how GitHub Copilot serves Claude Opus 4.7](https://gh.io/copilot-claude-opus)."
+      },
+      "preview": false,
+      "modelPicker": {
+        "enabled": true,
+        "category": "powerful"
+      },
+      "capabilities": {
+        "type": "chat",
+        "supports": {
+          "adaptive_thinking": true,
+          "max_thinking_budget": 32000,
+          "min_thinking_budget": 1024,
+          "parallel_tool_calls": true,
+          "reasoning_effort": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "streaming": true,
+          "structured_outputs": true,
+          "tool_calls": true,
+          "vision": true
+        },
+        "limits": {
+          "max_context_window_tokens": 1000000,
+          "max_non_streaming_output_tokens": 16000,
+          "max_output_tokens": 64000,
+          "max_prompt_tokens": 936000,
+          "vision": {
+            "max_prompt_image_size": 3145728,
+            "max_prompt_images": 1,
+            "supported_media_types": [
+              "image/jpeg",
+              "image/png",
+              "image/webp",
+              "image/gif",
+              "application/pdf"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "claude-opus-4.8",
+      "name": "Claude Opus 4.8",
+      "vendor": "Anthropic",
+      "family": "claude-opus-4.8",
+      "version": "claude-opus-4.8",
+      "status": "enabled",
+      "enabled": true,
+      "policy": {
+        "state": "enabled",
+        "required": true,
+        "termsUrl": "Enable access to the latest Claude Opus 4.8 model from Anthropic. [Learn more about how GitHub Copilot serves Claude Opus 4.8](https://gh.io/copilot-claude-opus)."
+      },
+      "preview": false,
+      "modelPicker": {
+        "enabled": true,
+        "category": "powerful"
+      },
+      "capabilities": {
+        "type": "chat",
+        "supports": {
+          "adaptive_thinking": true,
+          "max_thinking_budget": 32000,
+          "min_thinking_budget": 1024,
+          "parallel_tool_calls": true,
+          "reasoning_effort": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "streaming": true,
+          "structured_outputs": true,
+          "tool_calls": true,
+          "vision": true
+        },
+        "limits": {
+          "max_context_window_tokens": 1000000,
+          "max_non_streaming_output_tokens": 16000,
+          "max_output_tokens": 64000,
+          "max_prompt_tokens": 936000,
+          "vision": {
+            "max_prompt_image_size": 3145728,
+            "max_prompt_images": 1,
+            "supported_media_types": [
+              "image/jpeg",
+              "image/png",
+              "image/webp",
+              "image/gif",
+              "application/pdf"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "claude-opus-5",
+      "name": "Claude Opus 5",
+      "vendor": "Anthropic",
+      "family": "claude-opus-5",
+      "version": "claude-opus-5",
+      "status": "enabled",
+      "enabled": true,
+      "policy": {
+        "state": "enabled",
+        "required": true,
+        "termsUrl": "Enable access to the latest Claude Opus 5 model from Anthropic. [Learn more about how GitHub Copilot serves Claude Opus 5](https://gh.io/copilot-claude-opus)."
+      },
+      "preview": false,
+      "modelPicker": {
+        "enabled": true,
+        "category": "powerful"
+      },
+      "capabilities": {
+        "type": "chat",
+        "supports": {
+          "adaptive_thinking": true,
+          "max_thinking_budget": 32000,
+          "min_thinking_budget": 1024,
+          "parallel_tool_calls": true,
+          "reasoning_effort": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "streaming": true,
+          "structured_outputs": true,
+          "tool_calls": true,
+          "vision": true
+        },
+        "limits": {
+          "max_context_window_tokens": 1000000,
+          "max_non_streaming_output_tokens": 16000,
+          "max_output_tokens": 64000,
+          "max_prompt_tokens": 936000,
+          "vision": {
+            "max_prompt_image_size": 3145728,
+            "max_prompt_images": 1,
+            "supported_media_types": [
+              "image/jpeg",
+              "image/png",
+              "image/webp",
+              "image/gif",
+              "application/pdf"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "claude-sonnet-5",
+      "name": "Claude Sonnet 5",
+      "vendor": "Anthropic",
+      "family": "claude-sonnet-5",
+      "version": "claude-sonnet-5",
+      "status": "enabled",
+      "enabled": true,
+      "policy": {
+        "state": "enabled",
+        "required": true,
+        "termsUrl": "Enable access to the latest Claude model from Anthropic. [Learn more about how GitHub Copilot serves Claude](https://gh.io/copilot-claude-opus)."
+      },
+      "preview": false,
+      "modelPicker": {
+        "enabled": true,
+        "category": "versatile"
+      },
+      "capabilities": {
+        "type": "chat",
+        "supports": {
+          "adaptive_thinking": true,
+          "max_thinking_budget": 32000,
+          "min_thinking_budget": 1024,
+          "parallel_tool_calls": true,
+          "reasoning_effort": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "streaming": true,
+          "structured_outputs": true,
+          "tool_calls": true,
+          "vision": true
+        },
+        "limits": {
+          "max_context_window_tokens": 1000000,
+          "max_non_streaming_output_tokens": 16000,
+          "max_output_tokens": 64000,
+          "max_prompt_tokens": 936000,
+          "vision": {
+            "max_prompt_image_size": 3145728,
+            "max_prompt_images": 5,
+            "supported_media_types": [
+              "image/jpeg",
+              "image/png",
+              "image/webp",
+              "image/gif",
+              "application/pdf"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "gemini-3.5-flash",
+      "name": "Gemini 3.5 Flash",
+      "vendor": "Google",
+      "family": "gemini-3.5-flash",
+      "version": "gemini-3.5-flash",
+      "status": "enabled",
+      "enabled": true,
+      "policy": {
+        "state": "enabled",
+        "required": true,
+        "termsUrl": "Enable access to the latest Gemini 3.5 Flash model from Google. [Learn more about how GitHub Copilot serves Gemini 3.5 Flash](https://docs.github.com/en/copilot/reference/ai-models/model-hosting#google-models)."
+      },
+      "preview": false,
+      "modelPicker": {
+        "enabled": true,
+        "category": "lightweight"
+      },
+      "capabilities": {
+        "type": "chat",
+        "supports": {
+          "max_thinking_budget": 24000,
+          "min_thinking_budget": 256,
+          "parallel_tool_calls": true,
+          "reasoning_effort": [
+            "minimal",
+            "low",
+            "medium",
+            "high"
+          ],
+          "streaming": true,
+          "tool_calls": true,
+          "vision": true
+        },
+        "limits": {
+          "max_context_window_tokens": 1000000,
+          "max_output_tokens": 64000,
+          "max_prompt_tokens": 936000,
+          "vision": {
+            "max_prompt_image_size": 3145728,
+            "max_prompt_images": 10,
+            "supported_media_types": [
+              "image/jpeg",
+              "image/png",
+              "image/webp",
+              "image/heic",
+              "image/heif",
+              "application/pdf"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "gemini-3.6-flash",
+      "name": "Gemini 3.6 Flash",
+      "vendor": "Google",
+      "family": "gemini-3.6-flash",
+      "version": "gemini-3.6-flash",
+      "status": "enabled",
+      "enabled": true,
+      "policy": {
+        "state": "enabled",
+        "required": true,
+        "termsUrl": "Enable access to the latest Gemini 3.6 Flash model from Google. [Learn more about how GitHub Copilot serves Gemini 3.6 Flash](https://docs.github.com/en/copilot/reference/ai-models/model-hosting#google-models)."
+      },
+      "preview": false,
+      "modelPicker": {
+        "enabled": true,
+        "category": "versatile"
+      },
+      "capabilities": {
+        "type": "chat",
+        "supports": {
+          "max_thinking_budget": 32000,
+          "min_thinking_budget": 256,
+          "parallel_tool_calls": true,
+          "reasoning_effort": [
+            "minimal",
+            "low",
+            "medium",
+            "high"
+          ],
+          "streaming": true,
+          "tool_calls": true,
+          "vision": true
+        },
+        "limits": {
+          "max_context_window_tokens": 1000000,
+          "max_output_tokens": 64000,
+          "max_prompt_tokens": 936000,
+          "vision": {
+            "max_prompt_image_size": 3145728,
+            "max_prompt_images": 10,
+            "supported_media_types": [
+              "image/jpeg",
+              "image/png",
+              "image/webp",
+              "image/heic",
+              "image/heif",
+              "application/pdf"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "gemini-3.7-flash",
+      "name": "Gemini 3.7 Flash",
+      "vendor": "Google",
+      "family": "gemini-3.7-flash",
+      "version": "gemini-3.7-flash",
+      "status": "enabled",
+      "enabled": true,
+      "policy": {
+        "state": "enabled",
+        "required": true,
+        "termsUrl": "Enable access to the latest Gemini 3.7 Flash model from Google. [Learn more about how GitHub Copilot serves Gemini 3.7 Flash](https://docs.github.com/en/copilot/reference/ai-models/model-hosting#google-models)."
+      },
+      "preview": false,
+      "modelPicker": {
+        "enabled": true,
+        "category": "versatile"
+      },
+      "capabilities": {
+        "type": "chat",
+        "supports": {
+          "parallel_tool_calls": true,
+          "reasoning_effort": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "streaming": true,
+          "tool_calls": true,
+          "vision": true
+        },
+        "limits": {
+          "max_context_window_tokens": 1000000,
+          "max_output_tokens": 64000,
+          "max_prompt_tokens": 936000,
+          "vision": {
+            "max_prompt_image_size": 3145728,
+            "max_prompt_images": 10,
+            "supported_media_types": [
+              "image/jpeg",
+              "image/png",
+              "image/webp",
+              "image/heic",
+              "image/heif",
+              "application/pdf"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "gemini-3.8-flash",
+      "name": "Gemini 3.8 Flash",
+      "vendor": "Google",
+      "family": "gemini-3.8-flash",
+      "version": "gemini-3.8-flash",
+      "status": "enabled",
+      "enabled": true,
+      "policy": {
+        "state": "enabled",
+        "required": true,
+        "termsUrl": "Enable access to the latest Gemini 3.8 Flash model from Google. [Learn more about how GitHub Copilot serves Gemini 3.8 Flash](https://docs.github.com/en/copilot/reference/ai-models/model-hosting#google-models)."
+      },
+      "preview": false,
+      "modelPicker": {
+        "enabled": true,
+        "category": "versatile"
+      },
+      "capabilities": {
+        "type": "chat",
+        "supports": {
+          "parallel_tool_calls": true,
+          "reasoning_effort": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "streaming": true,
+          "tool_calls": true,
+          "vision": true
+        },
+        "limits": {
+          "max_context_window_tokens": 1048576,
+          "max_output_tokens": 65536,
+          "max_prompt_tokens": 983040,
+          "vision": {
+            "max_prompt_image_size": 3145728,
+            "max_prompt_images": 10,
+            "supported_media_types": [
+              "image/jpeg",
+              "image/png",
+              "image/webp",
+              "image/heic",
+              "image/heif",
+              "application/pdf"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "gpt-3.5-turbo",
+      "name": "GPT 3.5 Turbo",
+      "vendor": "Azure OpenAI",
+      "family": "gpt-3.5-turbo",
+      "version": "gpt-3.5-turbo-0613",
+      "status": "enabled",
+      "enabled": true,
+      "policy": {
+        "state": null,
+        "required": false,
+        "termsUrl": null
+      },
+      "preview": false,
+      "modelPicker": {
+        "enabled": false,
+        "category": null
+      },
+      "capabilities": {
+        "type": "chat",
+        "supports": {
+          "streaming": true,
+          "tool_calls": true
+        },
+        "limits": {
+          "max_context_window_tokens": 16384,
+          "max_output_tokens": 4096,
+          "max_prompt_tokens": 12288
+        }
+      }
+    },
+    {
+      "id": "gpt-3.5-turbo-0613",
+      "name": "GPT 3.5 Turbo",
+      "vendor": "Azure OpenAI",
+      "family": "gpt-3.5-turbo",
+      "version": "gpt-3.5-turbo-0613",
+      "status": "enabled",
+      "enabled": true,
+      "policy": {
+        "state": null,
+        "required": false,
+        "termsUrl": null
+      },
+      "preview": false,
+      "modelPicker": {
+        "enabled": false,
+        "category": null
+      },
+      "capabilities": {
+        "type": "chat",
+        "supports": {
+          "streaming": true,
+          "tool_calls": true
+        },
+        "limits": {
+          "max_context_window_tokens": 16384,
+          "max_output_tokens": 4096,
+          "max_prompt_tokens": 12288
+        }
+      }
+    },
+    {
+      "id": "gpt-4",
+      "name": "GPT 4",
+      "vendor": "Azure OpenAI",
+      "family": "gpt-4",
+      "version": "gpt-4-0613",
+      "status": "enabled",
+      "enabled": true,
+      "policy": {
+        "state": null,
+        "required": false,
+        "termsUrl": null
+      },
+      "preview": false,
+      "modelPicker": {
+        "enabled": false,
+        "category": null
+      },
+      "capabilities": {
+        "type": "chat",
+        "supports": {
+          "streaming": true,
+          "tool_calls": true
+        },
+        "limits": {
+          "max_context_window_tokens": 32768,
+          "max_output_tokens": 4096,
+          "max_prompt_tokens": 32768
+        }
+      }
+    },
+    {
+      "id": "gpt-4-0125-preview",
+      "name": "GPT 4 Turbo",
+      "vendor": "Azure OpenAI",
+      "family": "gpt-4-turbo",
+      "version": "gpt-4-0125-preview",
+      "status": "enabled",
+      "enabled": true,
+      "policy": {
+        "state": null,
+        "required": false,
+        "termsUrl": null
+      },
+      "preview": false,
+      "modelPicker": {
+        "enabled": false,
+        "category": null
+      },
+      "capabilities": {
+        "type": "chat",
+        "supports": {
+          "parallel_tool_calls": true,
+          "streaming": true,
+          "tool_calls": true
+        },
+        "limits": {
+          "max_context_window_tokens": 128000,
+          "max_output_tokens": 4096,
+          "max_prompt_tokens": 64000
+        }
+      }
+    },
+    {
+      "id": "gpt-4-0613",
+      "name": "GPT 4",
+      "vendor": "Azure OpenAI",
+      "family": "gpt-4",
+      "version": "gpt-4-0613",
+      "status": "enabled",
+      "enabled": true,
+      "policy": {
+        "state": null,
+        "required": false,
+        "termsUrl": null
+      },
+      "preview": false,
+      "modelPicker": {
+        "enabled": false,
+        "category": null
+      },
+      "capabilities": {
+        "type": "chat",
+        "supports": {
+          "streaming": true,
+          "tool_calls": true
+        },
+        "limits": {
+          "max_context_window_tokens": 32768,
+          "max_output_tokens": 4096,
+          "max_prompt_tokens": 32768
+        }
+      }
+    },
+    {
+      "id": "gpt-4-o-preview",
+      "name": "GPT-4o",
+      "vendor": "Azure OpenAI",
+      "family": "gpt-4o",
+      "version": "gpt-4o-2024-05-13",
+      "status": "enabled",
+      "enabled": true,
+      "policy": {
+        "state": null,
+        "required": false,
+        "termsUrl": null
+      },
+      "preview": false,
+      "modelPicker": {
+        "enabled": false,
+        "category": null
+      },
+      "capabilities": {
+        "type": "chat",
+        "supports": {
+          "parallel_tool_calls": true,
+          "streaming": true,
+          "tool_calls": true
+        },
+        "limits": {
+          "max_context_window_tokens": 128000,
+          "max_output_tokens": 4096,
+          "max_prompt_tokens": 64000
+        }
+      }
+    },
+    {
+      "id": "gpt-4.1",
+      "name": "GPT-4.1",
+      "vendor": "Azure OpenAI",
+      "family": "gpt-4.1",
+      "version": "gpt-4.1-2025-04-14",
+      "status": "enabled",
+      "enabled": true,
+      "policy": {
+        "state": "enabled",
+        "required": true,
+        "termsUrl": "Enable access to the latest GPT-4.1 model from OpenAI. [Learn more about how GitHub Copilot serves GPT-4.1](https://docs.github.com/en/copilot/using-github-copilot/ai-models/choosing-the-right-ai-model-for-your-task#gpt-41)."
+      },
+      "preview": false,
+      "modelPicker": {
+        "enabled": false,
+        "category": "versatile"
+      },
+      "capabilities": {
+        "type": "chat",
+        "supports": {
+          "parallel_tool_calls": true,
+          "streaming": true,
+          "structured_outputs": true,
+          "tool_calls": true,
+          "vision": true
+        },
+        "limits": {
+          "max_context_window_tokens": 128000,
+          "max_output_tokens": 16384,
+          "max_prompt_tokens": 128000,
+          "vision": {
+            "max_prompt_image_size": 3145728,
+            "max_prompt_images": 1,
+            "supported_media_types": [
+              "image/jpeg",
+              "image/png",
+              "image/webp",
+              "image/gif",
+              "application/pdf"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "gpt-4.1-2025-04-14",
+      "name": "GPT-4.1",
+      "vendor": "Azure OpenAI",
+      "family": "gpt-4.1",
+      "version": "gpt-4.1-2025-04-14",
+      "status": "enabled",
+      "enabled": true,
+      "policy": {
+        "state": "enabled",
+        "required": true,
+        "termsUrl": "Enable access to the latest GPT-4.1 model from OpenAI. [Learn more about how GitHub Copilot serves GPT-4.1](https://docs.github.com/en/copilot/using-github-copilot/ai-models/choosing-the-right-ai-model-for-your-task#gpt-41)."
+      },
+      "preview": false,
+      "modelPicker": {
+        "enabled": false,
+        "category": null
+      },
+      "capabilities": {
+        "type": "chat",
+        "supports": {
+          "parallel_tool_calls": true,
+          "streaming": true,
+          "structured_outputs": true,
+          "tool_calls": true,
+          "vision": true
+        },
+        "limits": {
+          "max_context_window_tokens": 128000,
+          "max_output_tokens": 16384,
+          "max_prompt_tokens": 128000,
+          "vision": {
+            "max_prompt_image_size": 3145728,
+            "max_prompt_images": 1,
+            "supported_media_types": [
+              "image/jpeg",
+              "image/png",
+              "image/webp",
+              "image/gif",
+              "application/pdf"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "gpt-4o",
+      "name": "GPT-4o",
+      "vendor": "Azure OpenAI",
+      "family": "gpt-4o",
+      "version": "gpt-4o-2024-11-20",
+      "status": "enabled",
+      "enabled": true,
+      "policy": {
+        "state": null,
+        "required": false,
+        "termsUrl": null
+      },
+      "preview": false,
+      "modelPicker": {
+        "enabled": false,
+        "category": null
+      },
+      "capabilities": {
+        "type": "chat",
+        "supports": {
+          "parallel_tool_calls": true,
+          "streaming": true,
+          "tool_calls": true,
+          "vision": true
+        },
+        "limits": {
+          "max_context_window_tokens": 128000,
+          "max_output_tokens": 4096,
+          "max_prompt_tokens": 64000,
+          "vision": {
+            "max_prompt_image_size": 3145728,
+            "max_prompt_images": 1,
+            "supported_media_types": [
+              "image/jpeg",
+              "image/png",
+              "image/webp",
+              "image/gif"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "gpt-4o-2024-05-13",
+      "name": "GPT-4o",
+      "vendor": "Azure OpenAI",
+      "family": "gpt-4o",
+      "version": "gpt-4o-2024-05-13",
+      "status": "enabled",
+      "enabled": true,
+      "policy": {
+        "state": null,
+        "required": false,
+        "termsUrl": null
+      },
+      "preview": false,
+      "modelPicker": {
+        "enabled": false,
+        "category": null
+      },
+      "capabilities": {
+        "type": "chat",
+        "supports": {
+          "parallel_tool_calls": true,
+          "streaming": true,
+          "tool_calls": true,
+          "vision": true
+        },
+        "limits": {
+          "max_context_window_tokens": 128000,
+          "max_output_tokens": 4096,
+          "max_prompt_tokens": 64000,
+          "vision": {
+            "max_prompt_image_size": 3145728,
+            "max_prompt_images": 1,
+            "supported_media_types": [
+              "image/jpeg",
+              "image/png",
+              "image/webp",
+              "image/gif",
+              "application/pdf"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "gpt-4o-2024-08-06",
+      "name": "GPT-4o",
+      "vendor": "Azure OpenAI",
+      "family": "gpt-4o",
+      "version": "gpt-4o-2024-08-06",
+      "status": "enabled",
+      "enabled": true,
+      "policy": {
+        "state": null,
+        "required": false,
+        "termsUrl": null
+      },
+      "preview": false,
+      "modelPicker": {
+        "enabled": false,
+        "category": null
+      },
+      "capabilities": {
+        "type": "chat",
+        "supports": {
+          "parallel_tool_calls": true,
+          "streaming": true,
+          "tool_calls": true
+        },
+        "limits": {
+          "max_context_window_tokens": 128000,
+          "max_output_tokens": 16384,
+          "max_prompt_tokens": 64000
+        }
+      }
+    },
+    {
+      "id": "gpt-4o-2024-11-20",
+      "name": "GPT-4o",
+      "vendor": "Azure OpenAI",
+      "family": "gpt-4o",
+      "version": "gpt-4o-2024-11-20",
+      "status": "enabled",
+      "enabled": true,
+      "policy": {
+        "state": null,
+        "required": false,
+        "termsUrl": null
+      },
+      "preview": false,
+      "modelPicker": {
+        "enabled": false,
+        "category": null
+      },
+      "capabilities": {
+        "type": "chat",
+        "supports": {
+          "parallel_tool_calls": true,
+          "streaming": true,
+          "tool_calls": true
+        },
+        "limits": {
+          "max_context_window_tokens": 128000,
+          "max_output_tokens": 16384,
+          "max_prompt_tokens": 64000
+        }
+      }
+    },
+    {
+      "id": "gpt-4o-mini",
+      "name": "GPT-4o mini",
+      "vendor": "Azure OpenAI",
+      "family": "gpt-4o-mini",
+      "version": "gpt-4o-mini-2024-07-18",
+      "status": "enabled",
+      "enabled": true,
+      "policy": {
+        "state": null,
+        "required": false,
+        "termsUrl": null
+      },
+      "preview": false,
+      "modelPicker": {
+        "enabled": false,
+        "category": null
+      },
+      "capabilities": {
+        "type": "chat",
+        "supports": {
+          "parallel_tool_calls": true,
+          "streaming": true,
+          "tool_calls": true
+        },
+        "limits": {
+          "max_context_window_tokens": 128000,
+          "max_output_tokens": 4096,
+          "max_prompt_tokens": 12288
+        }
+      }
+    },
+    {
+      "id": "gpt-4o-mini-2024-07-18",
+      "name": "GPT-4o mini",
+      "vendor": "Azure OpenAI",
+      "family": "gpt-4o-mini",
+      "version": "gpt-4o-mini-2024-07-18",
+      "status": "enabled",
+      "enabled": true,
+      "policy": {
+        "state": null,
+        "required": false,
+        "termsUrl": null
+      },
+      "preview": false,
+      "modelPicker": {
+        "enabled": false,
+        "category": null
+      },
+      "capabilities": {
+        "type": "chat",
+        "supports": {
+          "parallel_tool_calls": true,
+          "streaming": true,
+          "tool_calls": true
+        },
+        "limits": {
+          "max_context_window_tokens": 128000,
+          "max_output_tokens": 4096,
+          "max_prompt_tokens": 12288
+        }
+      }
+    },
+    {
+      "id": "gpt-5-mini",
+      "name": "GPT-5 mini",
+      "vendor": "Azure OpenAI",
+      "family": "gpt-5-mini",
+      "version": "gpt-5-mini",
+      "status": "enabled",
+      "enabled": true,
+      "policy": {
+        "state": "enabled",
+        "required": true,
+        "termsUrl": "Enable access to the latest GPT-5 mini model from OpenAI. [Learn more about how GitHub Copilot serves GPT-5 mini](https://gh.io/copilot-openai)."
+      },
+      "preview": false,
+      "modelPicker": {
+        "enabled": true,
+        "category": "lightweight"
+      },
+      "capabilities": {
+        "type": "chat",
+        "supports": {
+          "parallel_tool_calls": true,
+          "reasoning_effort": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "streaming": true,
+          "structured_outputs": true,
+          "tool_calls": true,
+          "vision": true
+        },
+        "limits": {
+          "max_context_window_tokens": 264000,
+          "max_output_tokens": 64000,
+          "max_prompt_tokens": 128000,
+          "vision": {
+            "max_prompt_image_size": 3145728,
+            "max_prompt_images": 1,
+            "supported_media_types": [
+              "image/jpeg",
+              "image/png",
+              "image/webp",
+              "image/gif",
+              "application/pdf"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "gpt-5.3-codex",
+      "name": "GPT-5.3-Codex",
+      "vendor": "OpenAI",
+      "family": "gpt-5.3-codex",
+      "version": "gpt-5.3-codex",
+      "status": "enabled",
+      "enabled": true,
+      "policy": {
+        "state": null,
+        "required": false,
+        "termsUrl": null
+      },
+      "preview": false,
+      "modelPicker": {
+        "enabled": true,
+        "category": "powerful"
+      },
+      "capabilities": {
+        "type": "chat",
+        "supports": {
+          "parallel_tool_calls": true,
+          "reasoning_effort": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "streaming": true,
+          "structured_outputs": true,
+          "tool_calls": true,
+          "vision": true
+        },
+        "limits": {
+          "max_context_window_tokens": 400000,
+          "max_output_tokens": 128000,
+          "max_prompt_tokens": 272000,
+          "vision": {
+            "max_prompt_image_size": 3145728,
+            "max_prompt_images": 1,
+            "supported_media_types": [
+              "image/jpeg",
+              "image/png",
+              "image/webp",
+              "image/gif",
+              "application/pdf"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "gpt-5.4",
+      "name": "GPT-5.4",
+      "vendor": "OpenAI",
+      "family": "gpt-5.4",
+      "version": "gpt-5.4",
+      "status": "enabled",
+      "enabled": true,
+      "policy": {
+        "state": "enabled",
+        "required": true,
+        "termsUrl": "Enable access to the latest GPT-5.4 model from OpenAI. [Learn more about how GitHub Copilot serves GPT-5.4](https://gh.io/copilot-openai)."
+      },
+      "preview": false,
+      "modelPicker": {
+        "enabled": true,
+        "category": "powerful"
+      },
+      "capabilities": {
+        "type": "chat",
+        "supports": {
+          "parallel_tool_calls": true,
+          "reasoning_effort": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "streaming": true,
+          "structured_outputs": true,
+          "tool_calls": true,
+          "vision": true
+        },
+        "limits": {
+          "max_context_window_tokens": 1050000,
+          "max_output_tokens": 128000,
+          "max_prompt_tokens": 922000,
+          "vision": {
+            "max_prompt_image_size": 3145728,
+            "max_prompt_images": 1,
+            "supported_media_types": [
+              "image/jpeg",
+              "image/png",
+              "image/webp",
+              "image/gif",
+              "application/pdf"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "gpt-5.4-mini",
+      "name": "GPT-5.4 mini",
+      "vendor": "OpenAI",
+      "family": "gpt-5.4-mini",
+      "version": "gpt-5.4-mini",
+      "status": "enabled",
+      "enabled": true,
+      "policy": {
+        "state": "enabled",
+        "required": true,
+        "termsUrl": "Enable access to the latest GPT-5.4 mini model from OpenAI. [Learn more about how GitHub Copilot serves GPT-5.4 mini](https://gh.io/copilot-openai)."
+      },
+      "preview": false,
+      "modelPicker": {
+        "enabled": true,
+        "category": "lightweight"
+      },
+      "capabilities": {
+        "type": "chat",
+        "supports": {
+          "parallel_tool_calls": true,
+          "reasoning_effort": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "streaming": true,
+          "structured_outputs": true,
+          "tool_calls": true,
+          "vision": true
+        },
+        "limits": {
+          "max_context_window_tokens": 400000,
+          "max_output_tokens": 128000,
+          "max_prompt_tokens": 272000,
+          "vision": {
+            "max_prompt_image_size": 3145728,
+            "max_prompt_images": 1,
+            "supported_media_types": [
+              "image/jpeg",
+              "image/png",
+              "image/webp",
+              "image/gif",
+              "application/pdf"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "gpt-5.5",
+      "name": "GPT-5.5",
+      "vendor": "OpenAI",
+      "family": "gpt-5.5",
+      "version": "gpt-5.5",
+      "status": "enabled",
+      "enabled": true,
+      "policy": {
+        "state": "enabled",
+        "required": true,
+        "termsUrl": "Enable access to the latest GPT-5.5 model from OpenAI. [Learn more about how GitHub Copilot serves GPT-5.5](https://gh.io/copilot-openai)."
+      },
+      "preview": false,
+      "modelPicker": {
+        "enabled": true,
+        "category": "powerful"
+      },
+      "capabilities": {
+        "type": "chat",
+        "supports": {
+          "parallel_tool_calls": true,
+          "reasoning_effort": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "streaming": true,
+          "structured_outputs": true,
+          "tool_calls": true,
+          "vision": true
+        },
+        "limits": {
+          "max_context_window_tokens": 1050000,
+          "max_output_tokens": 128000,
+          "max_prompt_tokens": 922000,
+          "vision": {
+            "max_prompt_image_size": 3145728,
+            "max_prompt_images": 1,
+            "supported_media_types": [
+              "image/jpeg",
+              "image/png",
+              "image/webp",
+              "image/gif",
+              "application/pdf"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "gpt-5.6-luna",
+      "name": "GPT-5.6 Luna",
+      "vendor": "OpenAI",
+      "family": "gpt-5.6-luna",
+      "version": "gpt-5.6-luna",
+      "status": "enabled",
+      "enabled": true,
+      "policy": {
+        "state": "enabled",
+        "required": true,
+        "termsUrl": "Enable access to the latest GPT-5.6 Luna model from OpenAI. [Learn more about how GitHub Copilot serves GPT-5.6 Luna](https://gh.io/copilot-openai)."
+      },
+      "preview": false,
+      "modelPicker": {
+        "enabled": true,
+        "category": "lightweight"
+      },
+      "capabilities": {
+        "type": "chat",
+        "supports": {
+          "parallel_tool_calls": true,
+          "reasoning_effort": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "streaming": true,
+          "structured_outputs": true,
+          "tool_calls": true,
+          "vision": true
+        },
+        "limits": {
+          "max_context_window_tokens": 1050000,
+          "max_output_tokens": 128000,
+          "max_prompt_tokens": 922000,
+          "vision": {
+            "max_prompt_image_size": 3145728,
+            "max_prompt_images": 1,
+            "supported_media_types": [
+              "image/jpeg",
+              "image/png",
+              "image/webp",
+              "image/gif",
+              "application/pdf"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "gpt-5.6-sol",
+      "name": "GPT-5.6 Sol",
+      "vendor": "OpenAI",
+      "family": "gpt-5.6-sol",
+      "version": "gpt-5.6-sol",
+      "status": "enabled",
+      "enabled": true,
+      "policy": {
+        "state": "enabled",
+        "required": true,
+        "termsUrl": "Enable access to the latest GPT-5.6 Sol model from OpenAI. [Learn more about how GitHub Copilot serves GPT-5.6 Sol](https://gh.io/copilot-openai)."
+      },
+      "preview": false,
+      "modelPicker": {
+        "enabled": true,
+        "category": "powerful"
+      },
+      "capabilities": {
+        "type": "chat",
+        "supports": {
+          "parallel_tool_calls": true,
+          "reasoning_effort": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "streaming": true,
+          "structured_outputs": true,
+          "tool_calls": true,
+          "vision": true
+        },
+        "limits": {
+          "max_context_window_tokens": 1050000,
+          "max_output_tokens": 128000,
+          "max_prompt_tokens": 922000,
+          "vision": {
+            "max_prompt_image_size": 3145728,
+            "max_prompt_images": 1,
+            "supported_media_types": [
+              "image/jpeg",
+              "image/png",
+              "image/webp",
+              "image/gif",
+              "application/pdf"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "gpt-5.6-sol-fast",
+      "name": "GPT-5.6 Sol Fast (Internal only)",
+      "vendor": "OpenAI",
+      "family": "gpt-5.6-sol-fast",
+      "version": "gpt-5.6-sol-fast",
+      "status": "enabled",
+      "enabled": true,
+      "policy": {
+        "state": "enabled",
+        "required": true,
+        "termsUrl": "Enable access to the latest GPT-5.6 Sol Fast model from OpenAI. [Learn more about how GitHub Copilot serves GPT-5.6 Sol Fast](https://gh.io/copilot-openai)."
+      },
+      "preview": false,
+      "modelPicker": {
+        "enabled": true,
+        "category": "powerful"
+      },
+      "capabilities": {
+        "type": "chat",
+        "supports": {
+          "parallel_tool_calls": true,
+          "reasoning_effort": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "streaming": true,
+          "structured_outputs": true,
+          "tool_calls": true,
+          "vision": true
+        },
+        "limits": {
+          "max_context_window_tokens": 1050000,
+          "max_output_tokens": 128000,
+          "max_prompt_tokens": 922000,
+          "vision": {
+            "max_prompt_image_size": 3145728,
+            "max_prompt_images": 1,
+            "supported_media_types": [
+              "image/jpeg",
+              "image/png",
+              "image/webp",
+              "image/gif",
+              "application/pdf"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "gpt-5.6-terra",
+      "name": "GPT-5.6 Terra",
+      "vendor": "OpenAI",
+      "family": "gpt-5.6-terra",
+      "version": "gpt-5.6-terra",
+      "status": "enabled",
+      "enabled": true,
+      "policy": {
+        "state": "enabled",
+        "required": true,
+        "termsUrl": "Enable access to the latest GPT-5.6 Terra model from OpenAI. [Learn more about how GitHub Copilot serves GPT-5.6 Terra](https://gh.io/copilot-openai)."
+      },
+      "preview": false,
+      "modelPicker": {
+        "enabled": true,
+        "category": "versatile"
+      },
+      "capabilities": {
+        "type": "chat",
+        "supports": {
+          "parallel_tool_calls": true,
+          "reasoning_effort": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "streaming": true,
+          "structured_outputs": true,
+          "tool_calls": true,
+          "vision": true
+        },
+        "limits": {
+          "max_context_window_tokens": 1050000,
+          "max_output_tokens": 128000,
+          "max_prompt_tokens": 922000,
+          "vision": {
+            "max_prompt_image_size": 3145728,
+            "max_prompt_images": 1,
+            "supported_media_types": [
+              "image/jpeg",
+              "image/png",
+              "image/webp",
+              "image/gif",
+              "application/pdf"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "gpt-6-astra",
+      "name": "GPT-6 Astra",
+      "vendor": "OpenAI",
+      "family": "gpt-6-astra",
+      "version": "gpt-6-astra",
+      "status": "enabled",
+      "enabled": true,
+      "policy": {
+        "state": "enabled",
+        "required": true,
+        "termsUrl": "Enable access to the latest GPT-6 Astra model from OpenAI. [Learn more about how GitHub Copilot serves GPT-6 Astra](https://gh.io/copilot-openai)."
+      },
+      "preview": false,
+      "modelPicker": {
+        "enabled": true,
+        "category": "powerful"
+      },
+      "capabilities": {
+        "type": "chat",
+        "supports": {
+          "parallel_tool_calls": true,
+          "reasoning_effort": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "streaming": true,
+          "structured_outputs": true,
+          "tool_calls": true,
+          "vision": true
+        },
+        "limits": {
+          "max_context_window_tokens": 1178000,
+          "max_output_tokens": 128000,
+          "max_prompt_tokens": 1050000,
+          "vision": {
+            "max_prompt_image_size": 3145728,
+            "max_prompt_images": 1,
+            "supported_media_types": [
+              "image/jpeg",
+              "image/png",
+              "image/webp",
+              "image/gif",
+              "application/pdf"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "grok-4.5",
+      "name": "Grok 4.5",
+      "vendor": "xAI",
+      "family": "grok-4.5",
+      "version": "grok-4.5",
+      "status": "enabled",
+      "enabled": true,
+      "policy": {
+        "state": null,
+        "required": false,
+        "termsUrl": null
+      },
+      "preview": false,
+      "modelPicker": {
+        "enabled": true,
+        "category": "versatile"
+      },
+      "capabilities": {
+        "type": "chat",
+        "supports": {
+          "parallel_tool_calls": true,
+          "reasoning_effort": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "streaming": true,
+          "structured_outputs": true,
+          "tool_calls": true,
+          "vision": true
+        },
+        "limits": {
+          "max_context_window_tokens": 500000,
+          "max_output_tokens": 128000,
+          "max_prompt_tokens": 372000,
+          "vision": {
+            "max_prompt_image_size": 3145728,
+            "max_prompt_images": 1,
+            "supported_media_types": [
+              "image/jpeg",
+              "image/png"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "grok-4.6",
+      "name": "Grok 4.6",
+      "vendor": "xAI",
+      "family": "grok-4.6",
+      "version": "grok-4.6",
+      "status": "enabled",
+      "enabled": true,
+      "policy": {
+        "state": null,
+        "required": false,
+        "termsUrl": null
+      },
+      "preview": false,
+      "modelPicker": {
+        "enabled": true,
+        "category": "versatile"
+      },
+      "capabilities": {
+        "type": "chat",
+        "supports": {
+          "parallel_tool_calls": true,
+          "reasoning_effort": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "streaming": true,
+          "structured_outputs": true,
+          "tool_calls": true,
+          "vision": true
+        },
+        "limits": {
+          "max_context_window_tokens": 500000,
+          "max_output_tokens": 128000,
+          "max_prompt_tokens": 372000,
+          "vision": {
+            "max_prompt_image_size": 3145728,
+            "max_prompt_images": 1,
+            "supported_media_types": [
+              "image/jpeg",
+              "image/png"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "mai-code-1.1-flash",
+      "name": "MAI-Code-1.1-Flash",
+      "vendor": "Microsoft",
+      "family": "oswe-vscode-modelD",
+      "version": "mai-code-1.1-flash",
+      "status": "enabled",
+      "enabled": true,
+      "policy": {
+        "state": "enabled",
+        "required": true,
+        "termsUrl": ""
+      },
+      "preview": false,
+      "modelPicker": {
+        "enabled": true,
+        "category": "lightweight"
+      },
+      "capabilities": {
+        "type": "chat",
+        "supports": {
+          "parallel_tool_calls": true,
+          "reasoning_effort": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "streaming": true,
+          "structured_outputs": true,
+          "tool_calls": true,
+          "vision": true
+        },
+        "limits": {
+          "max_context_window_tokens": 256000,
+          "max_output_tokens": 128000,
+          "max_prompt_tokens": 128000,
+          "vision": {
+            "max_prompt_image_size": 3145728,
+            "max_prompt_images": 1,
+            "supported_media_types": [
+              "image/jpeg",
+              "image/png",
+              "image/webp",
+              "image/gif",
+              "application/pdf"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "text-embedding-3-small",
+      "name": "Embedding V3 small",
+      "vendor": "Azure OpenAI",
+      "family": "text-embedding-3-small",
+      "version": "text-embedding-3-small",
+      "status": "enabled",
+      "enabled": true,
+      "policy": {
+        "state": null,
+        "required": false,
+        "termsUrl": null
+      },
+      "preview": false,
+      "modelPicker": {
+        "enabled": false,
+        "category": null
+      },
+      "capabilities": {
+        "type": "embeddings",
+        "supports": {
+          "dimensions": true
+        },
+        "limits": {
+          "max_inputs": 512
+        }
+      }
+    },
+    {
+      "id": "text-embedding-3-small-inference",
+      "name": "Embedding V3 small (Inference)",
+      "vendor": "Azure OpenAI",
+      "family": "text-embedding-3-small",
+      "version": "text-embedding-3-small",
+      "status": "enabled",
+      "enabled": true,
+      "policy": {
+        "state": null,
+        "required": false,
+        "termsUrl": null
+      },
+      "preview": false,
+      "modelPicker": {
+        "enabled": false,
+        "category": null
+      },
+      "capabilities": {
+        "type": "embeddings",
+        "supports": {
+          "dimensions": true
+        },
+        "limits": {}
+      }
+    },
+    {
+      "id": "text-embedding-ada-002",
+      "name": "Embedding V2 Ada",
+      "vendor": "Azure OpenAI",
+      "family": "text-embedding-ada-002",
+      "version": "text-embedding-3-small",
+      "status": "enabled",
+      "enabled": true,
+      "policy": {
+        "state": null,
+        "required": false,
+        "termsUrl": null
+      },
+      "preview": false,
+      "modelPicker": {
+        "enabled": false,
+        "category": null
+      },
+      "capabilities": {
+        "type": "embeddings",
+        "supports": {},
+        "limits": {
+          "max_inputs": 512
+        }
+      }
+    },
+    {
+      "id": "trajectory-compaction",
+      "name": "Trajectory Compaction",
+      "vendor": "Fireworks",
+      "family": "trajectory-compaction",
+      "version": "trajectory-compaction",
+      "status": "enabled",
+      "enabled": true,
+      "policy": {
+        "state": null,
+        "required": false,
+        "termsUrl": null
+      },
+      "preview": true,
+      "modelPicker": {
+        "enabled": false,
+        "category": null
+      },
+      "capabilities": {
+        "type": "chat",
+        "supports": {
+          "parallel_tool_calls": true,
+          "streaming": true,
+          "tool_calls": true
+        },
+        "limits": {
+          "max_context_window_tokens": 262144,
+          "max_output_tokens": 16384,
+          "max_prompt_tokens": 245760
+        }
+      }
+    }
+  ],
+  "filter": "all"
+}
